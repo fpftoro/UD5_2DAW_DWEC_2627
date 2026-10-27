@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>E06 · Ofertas</title>
+    <style>
+      body { font-family: Arial; margin: 20px; }
+      .caja { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+    </style>
+    <script>
+      function cerrarAviso() {
+        document.getElementById('aviso').style.display = 'none';
+      }
+      function marcar(id) {
+        var caja = document.getElementById(id);
+        if (caja.style.background == 'rgb(255, 243, 191)') {
+          caja.style.background = 'white';
+          caja.getElementsByTagName('span')[0].innerHTML = '☆';
+        } else {
+          caja.style.background = 'rgb(255, 243, 191)';
+          caja.getElementsByTagName('span')[0].innerHTML = '★';
+        }
+        contar();
+      }
+      function contar() {
+        var n = 0;
+        var cajas = document.getElementsByClassName('caja');
+        for (var i = 0; i < cajas.length; i++) {
+          if (cajas[i].style.background == 'rgb(255, 243, 191)') n++;
+        }
+        document.getElementById('contador').innerHTML = 'Favoritos: ' + n;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="aviso" style="background: #d3f9d8; padding: 8px; color: #2b8a3e">
+      ¡Envío gratis este fin de semana! <a href="javascript:cerrarAviso()">Cerrar</a>
+    </div>
+    <div style="font-size: 28px; font-weight: bold; color: #1c7ed6">Ofertas de la semana</div>
+    <div class="caja" id="p1" onclick="marcar('p1')">
+      <span>☆</span> <b>Auriculares</b> <font color="red">29,99 €</font>
+    </div>
+    <div class="caja" id="p2" onclick="marcar('p2')">
+      <span>☆</span> <b>Teclado</b> <font color="red">39,99 €</font>
+    </div>
+    <div class="caja" id="p3" onclick="marcar('p3')">
+      <span>☆</span> <b>Ratón</b> <font color="red">14,99 €</font>
+    </div>
+    <div id="contador" style="margin-top: 20px; font-style: italic">Favoritos: 0</div>
+  </body>
+</html>

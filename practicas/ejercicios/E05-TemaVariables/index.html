@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E05 · Personalizar</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mi blog</h1>
+    </header>
+    <form id="ajustes">
+      <fieldset>
+        <legend>Tema</legend>
+        <label><input type="radio" name="tema" value="sistema" checked /> Del sistema</label>
+        <label><input type="radio" name="tema" value="claro" /> Claro</label>
+        <label><input type="radio" name="tema" value="oscuro" /> Oscuro</label>
+      </fieldset>
+      <label>Color de acento <input type="color" name="acento" value="#1c7ed6" /></label>
+      <label>Tamaño de letra <input type="range" name="tamano" min="0.875" max="1.5" step="0.125" value="1" /></label>
+      <label><input type="checkbox" name="compacto" /> Vista compacta</label>
+      <button type="button" id="restablecer">Restablecer</button>
+    </form>
+    <main>
+      <article class="entrada">
+        <h2>Bienvenida</h2>
+        <p>Este texto cambia de aspecto con los ajustes. <a href="#">Un enlace</a>.</p>
+      </article>
+      <article class="entrada">
+        <h2>Segunda entrada</h2>
+        <p>Otro párrafo para ver el espaciado.</p>
+      </article>
+    </main>
+  </body>
+</html>

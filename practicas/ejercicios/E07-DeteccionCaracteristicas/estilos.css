@@ -1,0 +1,22 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+/* Alternativa para navegadores sin <dialog>: el mismo elemento, posicionado encima */
+dialog.sin-soporte {
+  display: block;
+  position: fixed;
+  inset: 20% 10% auto;
+  background: #ffffff;
+  border: 2px solid #1c7ed6;
+  padding: 1rem;
+  box-shadow: 0 0 0 100vmax rgb(0 0 0 / 0.5);
+}
+dialog.sin-soporte[hidden] {
+  display: none;
+}

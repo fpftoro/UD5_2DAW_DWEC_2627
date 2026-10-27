@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tablero</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <h1>Tablero del proyecto</h1>
+    <noscript>Este tablero necesita JavaScript para funcionar.</noscript>
+    <main id="tablero" data-columnas="Por hacer,En curso,Hecho"></main>
+    <p id="estado" role="status" aria-live="polite"></p>
+
+    <template id="plantilla-columna">
+      <section class="columna">
+        <h2><span class="titulo"></span> <span class="contador"></span></h2>
+        <ol class="tarjetas"></ol>
+        <div class="nueva">
+          <label>
+            <span class="oculto">Nueva tarea</span>
+            <input class="nueva-tarea" placeholder="Nueva tarea" autocomplete="off" />
+          </label>
+          <button type="button" class="anadir">Añadir</button>
+        </div>
+      </section>
+    </template>
+
+    <template id="plantilla-tarjeta">
+      <li class="tarjeta">
+        <p class="texto"></p>
+        <div class="acciones">
+          <button type="button" class="mover" data-direccion="-1">←</button>
+          <button type="button" class="mover" data-direccion="1">→</button>
+          <button type="button" class="borrar">🗑️</button>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>

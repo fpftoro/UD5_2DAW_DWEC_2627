@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="t d">
+  <title id="t">UD5 · El modelo de objetos del documento (DOM)</title>
+  <desc id="d">Portada de la unidad 5 del módulo Desarrollo Web en Entorno Cliente: el árbol DOM de una página, con html en la raíz y head, body y sus elementos como ramas.</desc>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1f3b"/>
+      <stop offset="1" stop-color="#2d1b4e"/>
+    </linearGradient>
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f7df1e"/>
+      <stop offset="1" stop-color="#ffb347"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#fondo)"/>
+  <!-- Retícula decorativa -->
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 50H1200M0 100H1200M0 150H1200M0 200H1200M0 250H1200M0 300H1200M0 350H1200"/>
+    <path d="M100 0V400M200 0V400M300 0V400M400 0V400M500 0V400M600 0V400M700 0V400M800 0V400M900 0V400M1000 0V400M1100 0V400"/>
+  </g>
+
+  <!-- Texto -->
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <text x="60" y="80" fill="#c9c3e6" font-size="22" letter-spacing="3">DESARROLLO WEB EN ENTORNO CLIENTE · 2DAW</text>
+    <rect x="60" y="100" width="120" height="6" rx="3" fill="url(#acento)"/>
+    <text x="60" y="185" fill="#ffffff" font-size="64" font-weight="700">UD5</text>
+    <text x="60" y="240" fill="#ffffff" font-size="34" font-weight="600">El modelo de objetos</text>
+    <text x="60" y="282" fill="#ffffff" font-size="34" font-weight="600">del documento (DOM)</text>
+    <text x="60" y="340" fill="#f7df1e" font-size="22" font-weight="600">RA6 · Aplicaciones web con el DOM</text>
+  </g>
+
+  <!-- Árbol DOM -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="16" text-anchor="middle">
+    <g stroke="#c9c3e6" stroke-width="2" fill="none">
+      <path d="M915 150 V170 M820 170 H1010 M820 170 V190 M1010 170 V190"/>
+      <path d="M1010 222 V240 M920 240 H1100 M920 240 V258 M1010 240 V258 M1100 240 V258"/>
+      <path d="M1010 290 V305 M1010 305 V318"/>
+    </g>
+    <rect x="865" y="115" width="100" height="36" rx="18" fill="#f7df1e" fill-opacity="0.15" stroke="#f7df1e"/>
+    <text x="915" y="139" fill="#f7df1e" font-weight="700">html</text>
+    <rect x="775" y="190" width="90" height="32" rx="16" fill="#7fd6ff" fill-opacity="0.15" stroke="#7fd6ff"/>
+    <text x="820" y="211" fill="#7fd6ff">head</text>
+    <rect x="965" y="190" width="90" height="32" rx="16" fill="#7fd6ff" fill-opacity="0.15" stroke="#7fd6ff"/>
+    <text x="1010" y="211" fill="#7fd6ff">body</text>
+    <rect x="880" y="258" width="80" height="32" rx="16" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+    <text x="920" y="279" fill="#ff7edb">h1</text>
+    <rect x="970" y="258" width="80" height="32" rx="16" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+    <text x="1010" y="279" fill="#ff7edb">ul</text>
+    <rect x="1060" y="258" width="80" height="32" rx="16" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+    <text x="1100" y="279" fill="#ff7edb">p</text>
+    <rect x="970" y="318" width="80" height="28" rx="14" fill="#28c840" fill-opacity="0.15" stroke="#28c840"/>
+    <text x="1010" y="337" fill="#28c840">li</text>
+  </g>
+
+  <!-- Marco de ventana -->
+  <g transform="translate(700,60)">
+    <rect width="440" height="290" rx="12" fill="none" stroke="#c9c3e6" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6"/>
+    <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
+    <circle cx="40" cy="18" r="6" fill="#febc2e"/>
+    <circle cx="60" cy="18" r="6" fill="#28c840"/>
+  </g>
+</svg>

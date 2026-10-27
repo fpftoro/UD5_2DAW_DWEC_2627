@@ -1,0 +1,35 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+th,
+td {
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.4rem;
+  text-align: left;
+}
+th button {
+  all: unset;
+  cursor: pointer;
+  font-weight: 700;
+}
+th[aria-sort='ascending'] button::after {
+  content: ' ▲';
+}
+th[aria-sort='descending'] button::after {
+  content: ' ▼';
+}
+.suspenso td:last-child {
+  color: #c92a2a;
+  font-weight: 700;
+}
+tfoot td {
+  font-weight: 700;
+}

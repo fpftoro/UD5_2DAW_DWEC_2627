@@ -1,0 +1,16 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+.error {
+  color: #c92a2a;
+}
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}

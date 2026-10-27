@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  font-family: system-ui, sans-serif;
+  margin: 2rem;
+}
+pre {
+  background: #f1f3f5;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.seleccionado {
+  outline: 3px solid #f08c00;
+}

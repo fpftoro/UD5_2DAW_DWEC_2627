@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ficha del producto</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <h1>Auriculares inalámbricos</h1>
+
+    <!-- Sin JavaScript, las secciones se ven una debajo de otra con su título -->
+    <div class="pestanas" id="ficha" data-etiqueta="Información del producto">
+      <section data-titulo="Descripción">
+        <h2>Descripción</h2>
+        <p>Auriculares con cancelación de ruido y 30 horas de batería.</p>
+      </section>
+      <section data-titulo="Especificaciones">
+        <h2>Especificaciones</h2>
+        <ul>
+          <li>Bluetooth 5.3</li>
+          <li>Peso: 250 g</li>
+        </ul>
+      </section>
+      <section data-titulo="Opiniones (2)">
+        <h2>Opiniones</h2>
+        <p>«Muy cómodos.» · «La batería dura de verdad.»</p>
+      </section>
+    </div>
+
+    <div class="pestanas" id="envio" data-etiqueta="Envío y devoluciones">
+      <section data-titulo="Envío">
+        <h2>Envío</h2>
+        <p>Gratis desde 50 €.</p>
+      </section>
+      <section data-titulo="Devoluciones">
+        <h2>Devoluciones</h2>
+        <p>30 días.</p>
+      </section>
+    </div>
+
+    <p id="registro" role="status"></p>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E01 · Explorador del árbol</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <article id="muestra">
+        <!-- Artículo de muestra -->
+        <h1>Recetas fáciles</h1>
+        <p>Tres recetas para <strong>empezar</strong> a cocinar.</p>
+        <ul id="recetas">
+          <li class="facil">Tortilla</li>
+          <li class="facil">Gazpacho</li>
+          <li>Paella</li>
+        </ul>
+        <p><a href="#recetas">Ir a las recetas</a></p>
+      </article>
+    </main>
+    <aside>
+      <h2>Árbol del artículo</h2>
+      <pre id="arbol"></pre>
+      <h2>Nodos por tipo</h2>
+      <ul id="tipos"></ul>
+      <h2>Colecciones vivas y estáticas</h2>
+      <p><button id="anadir">Añadir receta</button></p>
+      <p id="colecciones"></p>
+      <h2>Inspector</h2>
+      <p>Pulsa cualquier elemento del artículo.</p>
+      <pre id="inspector"></pre>
+    </aside>
+  </body>
+</html>

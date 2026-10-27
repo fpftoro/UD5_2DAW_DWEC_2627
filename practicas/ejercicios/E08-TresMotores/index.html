@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora de propinas</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <h1>Calculadora de propinas</h1>
+    <form id="calculadora">
+      <label for="importe">Importe de la cuenta (€)</label>
+      <input id="importe" name="importe" type="number" min="0" step="0.01" required />
+      <label for="porcentaje">Propina</label>
+      <select id="porcentaje" name="porcentaje">
+        <option value="0">Sin propina</option>
+        <option value="5">5 %</option>
+        <option value="10" selected>10 %</option>
+        <option value="15">15 %</option>
+      </select>
+      <label for="personas">Personas</label>
+      <input id="personas" name="personas" type="number" min="1" value="1" required />
+      <button>Calcular</button>
+    </form>
+    <p id="resultado" role="status"></p>
+    <p><button type="button" id="abrir-ayuda">¿Cuánta propina se deja?</button></p>
+    <dialog id="ayuda">
+      <h2>Propinas en España</h2>
+      <p>
+        No son obligatorias. Es habitual dejar entre un 5 % y un 10 % si el servicio ha sido bueno.
+      </p>
+      <form method="dialog"><button>Cerrar</button></form>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+}
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+.columna {
+  background: #f1f3f5;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.tarjetas {
+  list-style: none;
+  padding: 0;
+  min-height: 3rem;
+}
+.tarjeta {
+  background: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+}
+.acciones {
+  display: flex;
+  gap: 0.25rem;
+}
+.oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.nueva {
+  display: flex;
+  gap: 0.25rem;
+}
+/* Las transiciones de vista (View Transitions) no se animan si el usuario prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none;
+  }
+}

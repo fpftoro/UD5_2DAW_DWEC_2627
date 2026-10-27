@@ -1,0 +1,7 @@
+/* TODO: define las variables CSS y las reglas de cada tema y de la vista compacta (ver enunciado) */
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem;
+}

@@ -1,0 +1,33 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+.tarjeta {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tarjeta img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #e9ecef;
+}
+.tarjeta .info {
+  padding: 0.5rem 1rem;
+}
+.tarjeta.favorito {
+  border-color: #f08c00;
+  box-shadow: 0 0 0 2px #f08c00;
+}
+#filtros button[aria-pressed='true'] {
+  font-weight: 700;
+  text-decoration: underline;
+}

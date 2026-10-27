@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E07 · Receta</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <article id="receta">
+      <h1>Gazpacho andaluz</h1>
+      <p>Ingredientes: tomate, pepino, pimiento, ajo, aceite y sal.</p>
+      <p>
+        <button type="button" id="compartir">Compartir receta</button>
+        <button type="button" id="ver-pasos">Ver los pasos</button>
+      </p>
+    </article>
+
+    <dialog id="pasos">
+      <h2>Pasos</h2>
+      <ol>
+        <li>Trocea las verduras.</li>
+        <li>Tritúralas con el aceite y la sal.</li>
+        <li>Enfríalo en la nevera.</li>
+      </ol>
+      <p><button type="button" id="cerrar-pasos">Cerrar</button></p>
+    </dialog>
+
+    <h2>Compatibilidad de este navegador</h2>
+    <ul id="soporte"></ul>
+    <p id="avisos" role="status" aria-live="polite"></p>
+  </body>
+</html>

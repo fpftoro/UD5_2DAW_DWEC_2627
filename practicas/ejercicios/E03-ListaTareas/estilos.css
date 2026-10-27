@@ -1,0 +1,24 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 36rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+#tareas {
+  list-style: none;
+  padding: 0;
+}
+#tareas li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+.completada .texto {
+  text-decoration: line-through;
+  color: #868e96;
+}
+.vacia {
+  color: #868e96;
+  font-style: italic;
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Las tres capas de una aplicación web</title>
+  <desc id="d">Tres capas apiladas: contenido (HTML) abajo, aspecto (CSS) en medio y comportamiento (JavaScript) arriba. A la derecha, qué contiene cada fichero y la regla de cómo se comunican: el JavaScript cambia clases y atributos, el CSS decide el aspecto según ellos.</desc>
+  <rect width="900" height="420" fill="#ffffff"/>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <!-- Capas -->
+    <g transform="translate(40,40)">
+      <polygon points="0,250 200,300 400,250 200,200" fill="#e7f5ff" stroke="#1c7ed6" stroke-width="3"/>
+      <text x="200" y="257" text-anchor="middle" font-size="18" font-weight="700" fill="#1864ab">Contenido · HTML</text>
+      <polygon points="0,170 200,220 400,170 200,120" fill="#fff9db" stroke="#f08c00" stroke-width="3"/>
+      <text x="200" y="177" text-anchor="middle" font-size="18" font-weight="700" fill="#e67700">Aspecto · CSS</text>
+      <polygon points="0,90 200,140 400,90 200,40" fill="#ebfbee" stroke="#2f9e44" stroke-width="3"/>
+      <text x="200" y="97" text-anchor="middle" font-size="18" font-weight="700" fill="#2b8a3e">Comportamiento · JS</text>
+    </g>
+    <!-- Explicación -->
+    <g font-size="15">
+      <text x="480" y="60" font-weight="700" fill="#2b8a3e">js/main.js</text>
+      <text x="480" y="82" fill="#343a40">addEventListener, datos, lógica.</text>
+      <text x="480" y="102" fill="#343a40">Cambia clases y atributos, no estilos.</text>
+
+      <text x="480" y="150" font-weight="700" fill="#e67700">css/estilos.css</text>
+      <text x="480" y="172" fill="#343a40">Colores, tamaños, disposición.</text>
+      <text x="480" y="192" fill="#343a40">Reglas para .agotado, [hidden], [data-tema]…</text>
+
+      <text x="480" y="240" font-weight="700" fill="#1864ab">index.html</text>
+      <text x="480" y="262" fill="#343a40">Estructura semántica, textos, formularios.</text>
+      <text x="480" y="282" fill="#343a40">Sin onclick ni style en las etiquetas.</text>
+    </g>
+    <rect x="470" y="315" width="400" height="70" rx="10" fill="#f8f9fa" stroke="#adb5bd"/>
+    <text x="490" y="343" font-size="15" font-weight="700" fill="#495057">Regla de comunicación</text>
+    <text x="490" y="368" font-size="15" font-family="Consolas, 'Courier New', monospace" fill="#495057">JS → clase/atributo → CSS decide</text>
+  </g>
+</svg>

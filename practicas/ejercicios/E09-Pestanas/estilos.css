@@ -1,0 +1,37 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 44rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.pestanas {
+  margin: 1.5rem 0;
+}
+/* Solo cuando el JavaScript ha creado las pestañas */
+.con-pestanas [role='tablist'] {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 2px solid #1c7ed6;
+}
+.con-pestanas [role='tab'] {
+  border: 1px solid #ced4da;
+  border-bottom: none;
+  background: #f1f3f5;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+.con-pestanas [role='tab'][aria-selected='true'] {
+  background: #1c7ed6;
+  color: #ffffff;
+}
+.con-pestanas [role='tabpanel'] {
+  padding: 1rem;
+}
+/* El título de cada sección sobra cuando está la pestaña */
+.con-pestanas [role='tabpanel'] > h2 {
+  display: none;
+}
+[hidden] {
+  display: none !important;
+}
